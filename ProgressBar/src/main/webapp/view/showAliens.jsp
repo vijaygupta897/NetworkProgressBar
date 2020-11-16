@@ -59,8 +59,8 @@
 			
 			
 		</table>
-		<p id="time" style="margin-left: 45%"> </p>
-		<p style="margin-left: 45%"> <b>Propagation Speed 2 x 10</b> <sup>8</sup></p>
+		<p id="time" style="color:purple;"> </p><br>
+		<p id="Propagation"> <b>Propagation Speed 2 x 10 <sup>8</sup> m/sec</b></p>
 		<br>
 		<button onclick="window.location.href='/'">
 			<b>Back</b>
@@ -92,7 +92,8 @@
 		console.log(packetsize);
 		var width = packetsize;
 		var rate = document.getElementById("ratevalue").innerHTML;
-		
+		document.getElementById('time').style.marginLeft=(length / 10)/2+'%';
+		document.getElementById('Propagation').style.marginLeft=((length / 10)/2)-5+'%';
 		if(rate>500 && rate<=1050){
 			rate=3000;
 		}else if(rate>1050 && rate<=2050){
@@ -122,12 +123,11 @@
 				}
 			} else {
 				
-				 document.getElementById('time').innerHTML =l*1000 +'ms';
-				 l++
-
+				 document.getElementById('time').innerHTML =l*1000*0.0001 +'ms';
+				 l++;
 				console.log('else  ' + leftSpace)
 				leftSpace += 5;
-				elem.style.width = width + '%';
+				elem.style.width= width + '%';
 				elem.style.marginLeft = leftSpace + '%';
 
 			}

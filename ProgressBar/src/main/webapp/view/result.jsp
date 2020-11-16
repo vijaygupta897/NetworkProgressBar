@@ -66,8 +66,8 @@
 <body>
 	<div class="w3-container" style="margin-top: 5%; margin-left: 30%;">
 		<div style="padding-top: 10%">
-			<h2>Dynamic Progress Bar with Labels</h2>
-			<p>Centered label:</p>
+			<h2>Transmission Delay Versus Propogation Delay</h2>
+			<p>Simulator:</p>
 			<table>
 				<tr>
 					<td>
